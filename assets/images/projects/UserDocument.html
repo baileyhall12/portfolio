@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Team 7 User Documentation</title>
+    <style>
+        body {
+            background-color: #C8A2C8;
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+        }
+        div {
+            max-width: 60em;
+            margin: 2em auto;
+            padding: 2em;
+            background: white;
+            border-radius: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+            text-decoration: none;
+        }
+        button {
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>User Documentation</h1>
+        <p></p>
+        <h2>TripTwins</h2>
+        <p>TripTwins was born out of a simple yet powerful idea: people often travel with friends, but those friendships don't always align when it comes to travel preferences. Some love adventure and extreme sports, while others prefer peaceful sightseeing and cultural experiences. At TripTwins, we wanted to bridge this gap and create a space where travelers can connect with others who are on the same wavelength, making every trip more enjoyable and stress-free.</p>
+        <p>Our app, designed to be as intuitive and engaging as a dating app, uses advanced algorithms and travel-specific criteria such as budget, destination preferences, and activity interests to ensure you find the perfect travel buddy. By combining the best of technology and personalized matchmaking, TripTwins is setting a new standard in the travel industry.</p>
+        <h3>App Features</h3>
+            <ul>
+                <li><b>User Profile: </b>Users can create, edit, and update their travel preferences, photo, and personal information.</li>
+                <li><b>Matching: </b>Users are matched based on travel preferences and mutual interest, forming “trip twins”</li>
+                <li><b>Chatting: </b>Once matched, users can collaborate on trips together.</li>
+                <li><b>Trip Planner: </b>Users can build and share travel itineraries including accommodations, interests, and budgets.</li>
+            </ul>
+        <h2>Installation</h2>
+            <button><a href="https://www.youtube.com/watch?v=GE30KmvsFMM&ab_channel=BaileyHall" target="_blank">Watch a walkthrough here</a></button>
+            <ol>
+                <li>To get started, navigate to the TripTwins GitHub page <a href="https://github.com/uwf-capstone-sp2025/capstone-project-capstone-team-7" target="_blank">here</a>.</li>
+                <li>Click on "Code" and copy the URL.</li>
+                <li>Open GitBash or a similar terminal on your machine.</li>
+                <li>Navigate to the folder you want to save the program to and type '<b>git clone &lt;url&gt</b>'.</li>
+                <li>Navigate to the project folder: '<b>cd capstone-project-capstone-team-7/</b>'.</li>
+                <li>Install dependencies: '<b>npm i</b>' and '<b>prisma generate</b>'.</li>
+                <li>Run the program: '<b>npx ts-node src/app.ts</b>'.</li>
+                <li>Then navigate to '<b>http://localhost:3000/</b>' on the browser of your choice.</li>
+            </ol>
+        <h2>Walkthrough</h2>
+            <h3>Registration/Login</h3>
+                <button><a href="https://www.youtube.com/watch?v=flbYIvc2Z_M&ab_channel=BaileyHall" target="_blank">Watch a walkthrough here</a></button>
+                <p>To register for an account, you must have an existing Google account. When you run the program, it will be on the login page. Click on 'Login With Google Now' and follow the process to log in with your Google credentials.</p>
+                <p>Once your account has been created, you are able to log in and out as you please.</p>
+            <h3>Profile Features</h3>
+                <button><a href="https://www.youtube.com/watch?v=o14hjAadvts&ab_channel=BaileyHall" target="_blank">Watch a walkthrough here</a></button>
+                <p>To navigate to your profile, click on the circle icon in the top right of the page, which is your Google profile picture. To edit your profile information, click 'Edit Profile' and add in any information you would like displayed to other users.</p>
+                <p>To add trips you'd like to go on to your profile, click 'My Trips' and add the necessary information. These trips will be displayed on your profile to potential matches.</p>
+            <h3>Matching and Chatting</h3>
+                <button><a href="https://www.youtube.com/watch?v=9E7Y5zwj2jM&ab_channel=BaileyHall" target="_blank">Watch a walkthrough here</a></button>    
+                <p>To view other users and potentially match with them, navigate to 'Find My Twin'. Here you will see other users with similar travel styles as you, and if you can see yourself potentially going on a trip with this person, you can click 'Like' at the bottom of the page. Otherwise, you can click 'Dislike' to skip to the next user.</p>
+                <p>When both you and another user have liked each other's pages, you will become TripTwins. Now, if you navigate to the 'My Matches' tab, you will see their name and email on the left. If you click on one of your matches, you can start a conversation with them with real-time chat messages.</p>
+        <h2>FAQ and Troubleshooting</h2>
+            <p>Q: What if I don't have a Google account?</p>
+            <blockquote>A: You currently cannot register without a Google account.</blockquote>
+            <p>Q: Can I change my picture from my Google profile picture?</p>
+            <blockquote>A: Yes, in the Edit Profile page you are able to upload a new picture.</blockquote>
+            <p>Q: Can I delete my account?</p>
+            <blockquote>A: You cannot currently delete your account, but you can remove all personal information from your profile.</blockquote>
+            <p>Q: How do I start chatting with someone?</p>
+            <blockquote>A: You must match with them first, and then click on their name under the Matches tab.</blockquote>
+            <p>If your Find My Twin page says 'You've reached the end of your matches', you have seen every user in our database. Check again later for new users.</p>
+            <p>If the program does not run, try 'npm i' and 'prisma generate' before running again.</p>
+            <p>If you are getting a database error, that is because our database is no longer being hosted.</p>
+    </div>
+</body>
+</html>
